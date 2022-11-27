@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+   <div class="header">
+    <h1>Y-lib</h1>
+    <button class="btn">Log in</button>
+   </div> 
+   <main class="main">
+    <div class="add-button-container">
+        <button id="add" class="btn add-btn">+ Add book</button>
+    </div>
+    <div id="card-grid" class="grid">
+    </div>
+   </main>
+   <div id="input-dialog" class="input-dialog">
+        <form id="input-form" class="input-form">
+            <h4>Add new book</h4>
+            <input id="title" class="input" type="text" placeholder="Title" required>
+            <input id="author" class="input" type="text" placeholder="Author" required>
+            <input id="pages" class="input" type="number" min="1" max="1000" placeholder="Pages" required>
+            <div class="is-read">
+                <p>Have you read it?</p>
+                <input type="checkbox" name="is-read" id="is-read" required>
+            </div>
+            <button id="submit-btn" class="btn btn-green" type="submit">Submit</button>
+        </form>
+   </div>
+   <div id="overlay" class="overlay"></div>
+</body>
+</html>
